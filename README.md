@@ -16,7 +16,7 @@
 
 1. Make a copy of this Github repository on your computer using the `git` and `clone` commands that you will input to the terminal. The commands take a URL as a parameter to specify where it can get a copy of the repository. You can find the URL by clicking on the green *Clone or download* button at the top right part of this page. Copy the URL and replace the example text shown below. Note that `username` should be replaced with your own Github username. When you hit <kbd>Enter</kbd> it will ask you to provide your Github username and token. Once done, you will have a copy of the repository on your computer.
     ```
-    git clone https://github.com/CSUF-CPSC223P-STMAY-2021F/lab10-username.git
+    git clone https://github.com/aadi1720/lab10-username.git
     ```
 1. Navigate into the new directory using the command line. Note that `username` should be replaced with your own Github username.  As a shortcut, you can type the first few letters of the folder name and press <kbd>Tab</kbd> so that it auto completes the folder name for you.
 
@@ -96,7 +96,12 @@
 1. Run the unit testing program to ensure that your program runs as expected.  **NOTE: This may take approximately 45 seconds to complete due to the many sleeps that will be executed. It may appear to hang at the end, however it is actually going through the complete process a second time after the unit test finishes - be patient**  
 
     ```
-    ./test.sh
+    python3 -m unittest -v test1
+    python3 -m unittest -v test2
+    python3 -m unittest -v test3
+    python3 -m unittest -v test4
+    python3 -m unittest -v test5
+    
     ```
        
     The unit testing will output the results of a series of tests using specific input and expected output.  Any error will provide information on where the expected output is different from the actual output.  You will need to edit your source code to fix the error and run `./test.sh` repeatedly until it passes all the test.
